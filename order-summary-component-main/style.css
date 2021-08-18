@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+  list-style: 1.4;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  margin: 0;
+  padding: 70px 0;
+  background-image: url(images/pattern-background-desktop.svg);
+  background-size: 100vw 40vh;
+  background-repeat: no-repeat;
+  background-color: var(--pale-blue);
+}
+
+.container {
+  max-width: 440px;
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+  box-shadow: 5px 5px 5px grey;
+  border-radius: 20px;
+  background-color: white;
+  overflow: hidden;
+}
+
+#main_hero {
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+}
+
+#main_hero img {
+  object-fit: contain;
+}
+
+#hero_paragraf {
+  padding: 20px 70px;
+  color: var(--desaturated-blue);
+}
+
+#hero_paragraf h3 {
+  font-size: 1.5625rem;
+  font-weight: 900;
+  color: var(--dark-blue);
+  margin: 0;
+}
+
+#main_price {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  margin: 0 50px;
+  padding: 20px;
+  align-items: center;
+  background-color: var(--very-pale-blue);
+  border-radius: 10px;
+}
+#main_price img {
+  justify-content: center;
+}
+
+#price_text p,
+#price_text h3 {
+  margin: 0;
+  text-align: left;
+  font-size: 1rem;
+  color: var(--desaturated-blue);
+}
+
+#price_text h3 {
+  font-weight: 900;
+  color: var(--dark-blue);
+}
+
+#price_anchor {
+  color: var(--desaturated-blue);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+#price_anchor:hover,
+#main_button a:hover {
+  color: var(--dark-blue);
+  transition: 400ms;
+}
+
+#main_button {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+#main_button button {
+  font-weight: 700;
+  margin: 15px 0;
+  width: 100%;
+  height: 50px;
+  background-color: var(--bright-blue);
+  color: white;
+  border: unset;
+  border-radius: 10px;
+}
+
+#main_button button:hover {
+  background-color: var(--dark-blue);
+  transition: 300ms;
+}
+
+#main_button a {
+  font-weight: 700;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--desaturated-blue);
+}
+
+#attribution {
+  text-align: center;
+}

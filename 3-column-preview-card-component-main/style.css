@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  --primary-orange: hsl(31, 77%, 52%);
+  --primary-cyan: hsl(184, 100%, 22%);
+  --primary-darkcyan: hsl(179, 100%, 13%);
+  --trans-white: hsla(0, 0%, 100%, 0.75);
+  --light-grey: hsl(0, 0%, 95%);
+}
+
+html {
+  font-size: 100%;
+  line-height: 1.4;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: var(--light-grey);
+  height: 100vh;
+}
+
+/* Container style */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-family: "Big Shoulders Display", sans-serif;
+  width: 920px;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+@media (max-width: 578px) {
+  body {
+    padding: 90px 24px;
+    height: fit-content;
+  }
+  .container {
+    grid-template-columns: 1fr;
+    max-width: 320px;
+    height: auto;
+  }
+}
+
+/* Box style */
+.box {
+  display: inline-block;
+  padding: 40px;
+  color: var(--light-grey);
+}
+
+.box.orange {
+  background-color: var(--primary-orange);
+}
+
+.box.cyan {
+  background-color: var(--primary-cyan);
+}
+
+.box.dark-cyan {
+  background-color: var(--primary-darkcyan);
+}
+
+.box h2 {
+  font-size: 2.3125rem;
+  margin: 40px 0;
+}
+
+.box p {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.75rem;
+  margin: 0;
+  color: var(--trans-white);
+  line-height: 2;
+}
+
+/* Button style */
+.box button {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.25;
+  margin-top: 85px;
+  width: 150px;
+  height: 40px;
+  background-color: var(--light-grey);
+  border: var(--light-grey) solid 2px;
+  border-radius: 20px;
+}
+
+button.orange {
+  color: var(--primary-orange);
+}
+
+button.orange:hover {
+  background-color: var(--primary-orange);
+  color: var(--light-grey);
+  transition: 400ms;
+}
+
+button.cyan {
+  color: var(--primary-cyan);
+}
+
+button.cyan:hover {
+  background-color: var(--primary-cyan);
+  color: var(--light-grey);
+  transition: 400ms;
+}
+
+button.dark-cyan {
+  color: var(--primary-darkcyan);
+}
+
+button.dark-cyan:hover {
+  background-color: var(--primary-darkcyan);
+  color: var(--light-grey);
+  transition: 400ms;
+}
