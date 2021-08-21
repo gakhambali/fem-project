@@ -23,19 +23,21 @@ html {
 body {
   font-family: "Red Hat Display", sans-serif;
   margin: 0;
-  padding: 70px 0;
+  padding: 90px 0;
   background-image: url(images/pattern-background-desktop.svg);
-  background-size: 100vw 40vh;
+  background-size: contain;
   background-repeat: no-repeat;
   background-color: var(--pale-blue);
+  overflow: hidden;
 }
 
 .container {
   max-width: 440px;
+  max-height: 700px;
   margin: 0 auto;
   align-items: center;
   text-align: center;
-  box-shadow: 5px 5px 5px grey;
+  box-shadow: 0px 10px 15px var(--desaturated-blue);
   border-radius: 20px;
   background-color: white;
   overflow: hidden;
@@ -49,10 +51,11 @@ body {
 
 #main_hero img {
   object-fit: contain;
+  margin-bottom: 20px;
 }
 
 #hero_paragraf {
-  padding: 20px 70px;
+  padding: 0px 70px;
   color: var(--desaturated-blue);
 }
 
@@ -60,7 +63,7 @@ body {
   font-size: 1.5625rem;
   font-weight: 900;
   color: var(--dark-blue);
-  margin: 0;
+  margin-bottom: 20px;
 }
 
 #main_price {
@@ -102,6 +105,7 @@ body {
 }
 
 #main_button {
+  font-family: "Red Hat Display", sans-serif;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -111,6 +115,7 @@ body {
 }
 
 #main_button button {
+  font-size: 1rem;
   font-weight: 700;
   margin: 15px 0;
   width: 100%;
@@ -119,6 +124,7 @@ body {
   color: white;
   border: unset;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 #main_button button:hover {
@@ -130,6 +136,7 @@ body {
   font-weight: 700;
   justify-content: center;
   text-decoration: none;
+  margin-bottom: 20px;
   color: var(--desaturated-blue);
 }
 
