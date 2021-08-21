@@ -1,0 +1,195 @@
+html {
+  font-size: 10px;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* Base Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+h1 {
+  font-size: 6.5rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+/* Nav Styles */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #023047;
+  width: 100%;
+  z-index: 1;
+  font-size: 1.5rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 576px) {
+  nav ul {
+    justify-content: center;
+  }
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* START Welcome Section */
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #fb8500;
+  color: white;
+}
+
+#welcome-section img {
+  display: block;
+  width: 35vh;
+  height: 35vh;
+  object-fit: cover;
+  object-position: 0 5%;
+  border-radius: 100%;
+}
+#welcome-section h1,
+h2 {
+  margin: 5px 0;
+}
+
+#welcome-section h2 {
+  font-family: sans-serif;
+  font-weight: lighter;
+  color: #023047;
+}
+
+/* END Welcome Section */
+
+/* START Project Section */
+.project-section {
+  background: #023047;
+  padding: 10rem 2rem;
+}
+.project-section h2 {
+  color: white;
+  margin: 0 0 5rem 0;
+  border-bottom: solid white 2px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+.project {
+  background: #fb8500;
+  border-radius: 2px;
+}
+
+.project-img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* END Project Section */
+
+/* START Project Section */
+#contacts {
+  text-align: center;
+  background-color: #fb8500;
+  padding: 5px 0;
+}
+
+#contacts h2 {
+  /* font-family: Roboto Condensed, sans-serif; */
+  font-size: 2.5rem;
+  color: white;
+}
+
+#contacts ul {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+#contacts li {
+  font-size: 2.5em;
+  margin: 0 10px;
+}
+
+#contacts li a {
+  color: white;
+}
+
+@media (max-width: 576px) {
+  #contacts h2 {
+    font-size: 1.8rem;
+  }
+  #contacts li {
+    font-size: 1.5rem;
+  }
+}
